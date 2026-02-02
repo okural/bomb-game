@@ -285,7 +285,7 @@ def yusuf2():
     return jsonify(status="f")
 
 
-@app.route("/api/games", methods=["GET", "OPTIONS"])
+@app.route("/", methods=["GET", "OPTIONS"])
 def game():
     # Preflight isteği (OPTIONS)
     if request.method == "OPTIONS":
